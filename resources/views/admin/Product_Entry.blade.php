@@ -1,1 +1,1 @@
-
+@extends('admin/layout')
