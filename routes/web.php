@@ -14,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('admin/pages/login');
+});
+Route::get('/r', function () {
+    return view('admin/pages/registration');
 });
 
 Auth::routes();
