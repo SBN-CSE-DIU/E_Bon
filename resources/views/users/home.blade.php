@@ -1,1 +1,1 @@
-@extends('user/layout')
+@extends('users/user-layout/user-layout')
