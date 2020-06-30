@@ -1,90 +1,141 @@
-	/* Coded with love by Mutiullah Samim */
-    body,
-    html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        background: #60a3bc !important;
-    }
-    .user_card {
-        height: 400px;
-        width: 350px;
-        margin-top: auto;
-        margin-bottom: auto;
-        background: #f39c12;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 5px;
+/* login icon section*/
+.icon-shape a{
+    color: #444444;
+}
+.icon-shape i{
+    padding: 5px;
+}
+.shape{
+    font-size: 25px;
+}
+.shape span{
+    padding-left: 12px;
+    padding-right: 22px;
+}
+.circ{
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #444444;
+    border-radius: 50%;
+}
+/* login icon section end*/
 
-    }
-    .brand_logo_container {
-        position: absolute;
-        height: 170px;
-        width: 170px;
-        top: -75px;
-        border-radius: 50%;
-        background: #60a3bc;
-        padding: 10px;
-        text-align: center;
-    }
-    .brand_logo {
-        height: 150px;
-        width: 150px;
-        border-radius: 50%;
-        border: 2px solid white;
-    }
-    .form_container {
-        margin-top: 100px;
-    }
-    .login_btn {
-        width: 100%;
-        background: #c0392b !important;
-        color: white !important;
-    }
-    .login_btn:focus {
-        box-shadow: none !important;
-        outline: 0px !important;
-    }
-    .login_container {
-        padding: 0 2rem;
-    }
-    .input-group-text {
-        background: #c0392b !important;
-        color: white !important;
-        border: 0 !important;
-        border-radius: 0.25rem 0 0 0.25rem !important;
-    }
-    .input_user,
-    .input_pass:focus {
-        box-shadow: none !important;
-        outline: 0px !important;
-    }
-    .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-        background-color: #c0392b !important;
-    }
+/* menu  section*/
+.menu-font{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bg-light {
+    background-color: #fff !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(247, 107, 107);
+}
+/* menu section end*/
 
-    /*registration css*/
-    *[role="form"] {
-        max-width: 530px;
-        padding: 15px;
-        margin: 0 auto;
-        border-radius: 0.3em;
-        background-color: #f2f2f2;
-    }
+.content{
+    position: absolute;
+    height: 100%;
+}
+.content-text {
+    position: relative;
+    padding-top: 250px;
+    padding-left: 65px;
+    padding-bottom: 60px;
     
-    *[role="form"] h2 { 
-        font-family: 'Open Sans' , sans-serif;
-        font-size: 40px;
-        font-weight: 600;
-        color: #000000;
-        margin-top: 5%;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-    }
+}
+.content-text h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: #0c0c0c;
+}
+.content-text p{
+    color: #fdfdfd;
+}
+.content-text a {
+	color: #fff;
+	background-color: #f00;
+	border-color: #f00;
+}
+.content-text a:hover {
+	color: #fff;
+	background-color: rgba(167, 7, 7, 0.212);
+	border-color: rgba(235, 227, 227, 0.212);
+}
+.h{
+    height: 430px;
+    
+    
+}
+.s{
+    height: 100%;
+    max-width: 1205px;
+}
+.dorder{
+    border-bottom: 1px solid #0c0c0c;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.botom-pading{
+    padding-bottom: 40px;
+}
+.title{
+    text-align: center;
+    
+}
+
+
+hr{
+    border-bottom: 2px solid #0c0c0c;
+    width: 174px;
+    font-weight: bold;
+    
+}
+
+/*parallax*/
+
+.parallax{
+    background-image: url('../images/dog-2.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
+.parallax h2{
+    color: whitesmoke;
+}
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: 0px;
+	margin-left: -15px;
+}
+
+
+/*admin panel*/
+
+body {
+	margin: 0;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	background-color: #c2c2c2;
+}

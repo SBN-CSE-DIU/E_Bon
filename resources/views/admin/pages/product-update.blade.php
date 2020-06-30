@@ -62,7 +62,7 @@
                       </div>
                       <br>
                       <div id="success"></div>
-                      <button type="submit" class="btn btn-primary mb-2" id="sendMessageButton">Submit</button>
+                      <button type="submit" class="btn btn-primary mb-2" id="sendMessageButton">Update</button>
                     </form>
                   </div>
 @endsection
