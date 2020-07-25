@@ -45,9 +45,9 @@ class ProductController extends Controller
 //            return redirect('/admin/product')->with('error', 'Oops!... Product Can not Created. Please try again.');
     }
 
-    public function show(Product $product)
+    public function show()
     {
-
+        return view('admin/product/show');
     }
 
 

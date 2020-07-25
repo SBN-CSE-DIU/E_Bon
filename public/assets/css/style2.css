@@ -3,4 +3,12 @@
     vertical-align: middle;
     border-top: 1px solid #dee2e6;
 }
+.wrap{
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px gray;
+    padding: 30px;
+    background-color: gray;
 
+}
