@@ -2,7 +2,7 @@
 @section('content')
 <div class="col-lg-9 col-md-10 mx-auto">
     <h2>Insert Product</h2>
-    {!! Form::open(['action'=>'ProductController@store', 'method'=>'POST']) !!}
+    {!! Form::open(['action'=>'ProductController@store', 'method'=>'POST', 'enctype'=>'multipart/form-data']) !!}
       <div class="control-group">
         <div class="form-group floating-label-form-group controls">
           <label>Product Name</label>
@@ -21,7 +21,7 @@
       <div class="control-group">
         <div class="form-group floating-label-form-group controls">
           <label>Images</label>
-          <input type="file" class="form-control" name="image" data-validation-required-message="Please enter ID.">
+          <input type="file" class="form-control" name="image">
           <p class="help-block text-danger"></p>
         </div>
       </div>
@@ -44,7 +44,7 @@
       <div class="control-group">
         <div class="form-group floating-label-form-group controls">
           <label>Description</label>
-          <textarea name="description" rows="5" class="form-control" placeholder="Message" data-validation-required-message="Please enter a message."></textarea>
+          <textarea name="description" rows="5" class="form-control"></textarea>
           <p class="help-block text-danger"></p>
         </div>
       </div>

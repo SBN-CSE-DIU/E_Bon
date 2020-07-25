@@ -33,7 +33,17 @@ class ProductController extends Controller
 //        $product->category_id = $request->input('category_id');
         $product->quantity = $request->input('quantity');
         $product->price = $request->input('price');
-//        $product->image = $request->input('image');
+
+        if ($request->hasFile('image')){
+            $file = $request->file('image');
+            $ext = $file->getClientOriginalExtension();
+            $filename = $product->name.'.'.$ext;
+            $file->move('product_image', $filename);
+            $product->image = $filename;
+        }else{
+            $product->image = '';
+        }
+
 //        $product->description = $request->input('description');
 
         $product->save();
