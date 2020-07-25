@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{('assets/css/style2.css')}}">
 
-    <title>Hello, world!</title>
+    <title>E-Bon</title>
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light pt-4 pb-4" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info py-3 mb-3" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+            <a class="navbar-brand" href=""><h3>E-Bon</h3></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -35,7 +35,7 @@
                         <a class="nav-link" href="">Sample Post</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Contact</a>
+                        <a class="nav-link ml-5" href=""><h5>{{ Auth::user()->name }}</h5></a>
                     </li>
                 </ul>
             </div>
@@ -44,16 +44,15 @@
 
     <main>
         <div class="container-fluid">
-            <h2 class="text-center pt-5 pb-5 bg-primary">Admin Panel</h2>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="list-group">
-                        <a href="" class="list-group-item list-group-item-action ">
-                            All Users
-                        </a>
-                        <a href="" class="list-group-item list-group-item-action">All Product</a>
-                        <a href="" class="list-group-item list-group-item-action ">Insert Product</a>
-
+                        <a href="" class="list-group-item list-group-item-action">Users</a>
+                        <a href="" class="list-group-item list-group-item-action">Orders</a>
+                        <a href="" class="list-group-item list-group-item-action">Products</a>
+                        <a href="" class="list-group-item list-group-item-action">Product Status</a>
+                        <a href="" class="list-group-item list-group-item-action">Order Status</a>
+                        <a href="" class="list-group-item list-group-item-action">Category</a>
                     </div>
                 </div>
                 <!--Content-->

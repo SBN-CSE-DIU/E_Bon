@@ -14,9 +14,14 @@ class CreateProductsTable extends Migration
             $table->integer('user_id')->nullable();
             $table->integer('category_id')->nullable();
             $table->integer('quantity')->nullable();
-            $table->integer('price')->nullable();
+            $table->integer('sale_price')->nullable();
+            $table->integer('purchase')->nullable();
             $table->integer('discount')->nullable();
-            $table->string('image')->nullable();
+            $table->integer('product_status_id')->nullable();
+            $table->string('color')->nullable();
+            $table->string('age')->nullable();
+            $table->mediumText('image')->nullable();
+            $table->boolean('isdeleted')->nullable();
             $table->text('description')->nullable();
             $table->timestamps();
         });

@@ -1,10 +1,9 @@
 @extends('admin/layout/layout')
 @section('content')
-<div class="col-md-9">
-    { $name }}
+<div class="col-md-10 ">
     <br>
-    <a href="{{ route('product.create') }}"> Create Product </a>
-<table class="table table-sm text-center my-0">
+    <a href="{{ route('product.create') }}" class="btn btn-success mb-3"> Create Product </a>
+<table class="table border table-sm text-center">
   <thead>
     <tr>
       <th scope="col">Name</th>
@@ -26,11 +25,13 @@
             <td> {{ $row->discount }} </td>
             <td> {{ $row->description }} </td>
             <td>
-                <a class="btn btn-info" href="">View</a>
-                <a class="btn btn-warning" href="">Update</a>
-                {!! Form::open(['action'=>['ProductController@destroy', $row->id], 'method'=>'DELETE']) !!}
-                    <button class="btn btn-danger">Delete</button>
-                {!! Form::close() !!}
+                <a class="btn btn-warning" href="">Edit</a>
+                <a class="btn btn-danger" href="">Delete</a>
+
+{{--                {!! Form::open(['action'=>['ProductController@destroy', $row->id], 'method'=>'DELETE']) !!}--}}
+{{--                    <button class="btn btn-danger">Delete</button>--}}
+{{--                {!! Form::close() !!}--}}
+
             </td>
         </tr>
       @endforeach
