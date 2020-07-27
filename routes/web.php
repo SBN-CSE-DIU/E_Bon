@@ -7,14 +7,17 @@ Auth::routes();
 
 Route::group(['prefix'=>'/admin'], function() {
     Route::resource('product', 'ProductController');
-});
-Route::group(['prefix'=>'/admin'], function() {
     Route::resource('category', 'CategoryController');
-});
-Route::group(['prefix'=>'/users'], function() {
-    Route::resource('users', 'UserViewController');
+    Route::resource('product_status', 'ProductController');
+    Route::resource('order_status', 'ProductController');
 });
 
 
+Route::get('/', ['as'=>'home', 'uses'=>'HomeController@index']);
+Route::get('/home', ['as'=>'home', 'uses'=>'HomeController@index']);
+
+Route::get('/name',function(){
+    return view('users/checkOut');
+})->name('name');
 
 

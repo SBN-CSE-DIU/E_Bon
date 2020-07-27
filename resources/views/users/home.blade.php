@@ -1,260 +1,63 @@
-@extends('users/layout/layout')
-
-@section('content')
-<section>
-    
-    <div class="container">
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <h1 class="bestproduct">BESTPRODUCT</h1>
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-md-6 caption ">
-                            <h1>Mack Book Pro</h1>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book</p>
-                            <button class="buy-now">BUY NOW →</button>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="d-block w-100" src="{{('/assets/images/bird-1.jpg')}}" alt="First slide">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-md-6 caption">
-                            <h1>Mack Book Pro</h1>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book</p>
-                            <button class="buy-now">BUY NOW →</button>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="d-block w-100 " style="width: 40px;" src="{{('/assets/images/bird-1.jpg')}}" alt="First slide">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-md-6 caption">
-                            <h1>Mack Book Pro</h1>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book</p>
-                            <button class="buy-now">BUY NOW →</button>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="d-block w-100" src="{{('/assets/images/bird-1.jpg')}}" alt="First slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-</section>
-
-<section class="product-secttion">
-    <div class="container">
-        <div class="smartphone-title pb-4 d-flex justify-content-between">
-            <h3>Smart Phone</h1>
-                <a class="see-all-a" href="">See all</a>
-        </div>
-
-        <div class="row justify-content-between">
-            <div class="col-md-3">
-                <div class="card_wrapper">
-                    <div class="card" style="width: 16rem;">
-                        <img class="card-img-top" src="{{('/assets/images/bird-1.jpg')}}" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card_wrapper">
-                    <div class="card" style="width: 16rem;">
-                        <img class="card-img-top" src="{{('/assets/images/bird-1.jpg')}}" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card_wrapper jus">
-                    <div class="card" style="width: 16rem;">
-                        <img class="card-img-top" src="{{('/assets/images/bird-1.jpg')}}" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card_wrapper">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="{{('/assets/images/bird-1.jpg')}}" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+@extends('users.layout.layout')
+@section('contents')
+<section id="item_part">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="productItem">
+                        
+                        <button type="button" class="bt" data-toggle="modal" data-target=".bd-example-modal-lg"><img class="img-fluid" src="{{('/assets/images/bird-1.jpg')}}" alt=""></button>
+                        <h3>Title</h4>
+                        <p><span>color:</span><span>red</span> <span>age:</span><span>12</span> </p>
+                        <h5>price</h5>
+                        
+                        <button class="addToChartBtn">Add to chart</button>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
+    <section>
+        <!-- Large modal -->
+        <!-- <button type="button" class="bt" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
 
-    </div>
-</section>
-<section class="somthing">
-    <div class="container">
-        <h2 class="text-center pt-5 pb-5">Something</h2>
-    </div>
-</section>
-<section class="product-secttion">
-    <div class="container">
-        <div class="smartphone-title pb-4 d-flex justify-content-between">
-            <h3>Smart Phone</h1>
-                <a class="see-all-a" href="">See all</a>
-        </div>
-
-        <div class="row justify-content-between">
-            <div class="col-md-3">
-                <div class="card_wrapper">
-                    <div class="card" style="width: 16rem;">
-                        <img class="card-img-top" src="{{('/assets/images/bird-1.jpg')}}" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <section class="pt-5 pb-4">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                     <img class="img-fluid" src="{{('/assets/images/bird-1.jpg')}}" style="height: 310px;" alt="">
                     </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card_wrapper">
-                    <div class="card" style="width: 16rem;">
-                        <img class="card-img-top" src="{{('/assets/images/bird-1.jpg')}}" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="col-md-6">
+                      <div class="itemDetails">
+                        <h2>Product name</h2>
+                        <div class="rating pb-3">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span><a href="">4 rating</a> |</span>
+                          <span><a href="">Write a Review</a></span>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card_wrapper jus">
-                    <div class="card" style="width: 16rem;">
-                        <img class="card-img-top" src="{{('/assets/images/bird-1.jpg')}}" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="priceShow pl-2">Price <span>$20</span></p>
+                        <P class="pt-3 pb-3 pl-2">quanta <span>3</span></P>
+                        <div class="row">
+                          <div class="col-md-6"><button class="addToChartBtn">Add to chart</button></div>
+                          <div class="col-md-6"><button class="addToChartBtn">Add to WishList</button></div>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </section>
             </div>
-
-            <div class="col-md-3">
-                <div class="card_wrapper">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="{{('/assets/images/bird-1.jpg')}}" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
 
 
-    </div>
-</section>
-
-<section class="banner_logo">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="for_slick_slider multiple-items">
-                    
-                        <div class="items">
-                            <img src="{{('/assets/images/brand_logo/1.jpg')}}" alt="">
-                            <div class="overlay"></div>
-                        </div>
-            
-                        <div class="items">
-                            <img src="{{('/assets/images/brand_logo/1.jpg')}}" alt="">
-                            <div class="overlay"></div>
-                        </div>
-            
-                        <div class="items">
-                            <img src="{{('/assets/images/brand_logo/1.jpg')}}" alt="">
-                            <div class="overlay"></div>
-                        </div>
-            
-                        <div class="items">
-                            <img src="{{('/assets/images/brand_logo/1.jpg')}}" alt="">
-                            <div class="overlay"></div>
-                        </div>
-            
-                        <div class="items">
-                            <img src="{{('/assets/images/brand_logo/1.jpg')}}" alt="">
-                            <div class="overlay"></div>
-                        </div>
-            
-                        <div class="items">
-                            <img src="{{('/assets/images/brand_logo/1.jpg')}}" alt="">
-                            <div class="overlay"></div>
-                        </div>
-
-                </div>
-                
-            </div>
-            </div>
-        </div>
-        
-
-
-</section>
-
-
+    </section>
 @endsection

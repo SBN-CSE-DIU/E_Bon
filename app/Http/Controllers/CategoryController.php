@@ -3,40 +3,36 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\ProductStatus;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         // $rows = Product::all();
         return view('admin/category/index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('admin/category/create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        //validation category
+        $this->validate($request, [
+            'name'=>'required'
+        ]);
+
+        //create category
+        $category = new Category();
+        $category->name = $request->input('name');
+        if($category->save())
+            return redirect()->back()->with('success', 'Category Created Successfully');
+        else
+            return redirect()->back()->with('error', 'Oops!... Category Can not Created. Please try again.');
     }
 
     /**
