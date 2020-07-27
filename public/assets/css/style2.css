@@ -1,6 +1,184 @@
-.table td, .table th {
-    padding: .75rem;
-    vertical-align: middle;
-    border-top: 1px solid #dee2e6;
+.container {
+	max-width: 1430px;
 }
 
+.border{
+	margin-bottom: 26px;
+	border-bottom: 1px solid #0056b3
+}
+.orderborder{
+	border-bottom: 1px solid #0056b3;
+	margin: 10px 0px;
+}
+.orderItem h3{
+padding-top: 5px;
+padding-bottom: 5px;
+}
+#orderListPart .col-md-3{
+	padding: 0px;
+}
+
+
+.bg-light {
+	background-color: #f8f9fa !important;
+	box-shadow: 0px 0px 30px;
+}
+
+.container-fluid {
+	width: 85%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#item_part .col-md-2 {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 16.666667%;
+	flex: 0 0 16.666667%;
+	max-width: 14.286%;
+}
+#item_part {
+	margin-top: 20px;
+	margin-top: 114px;
+	padding-top: 20px;
+}
+.productItem{
+    width: 100%;
+    text-align: center;
+}
+.content{
+    width: 100%;
+}
+
+.wi input{
+    width: 90% !important;
+}
+.content ul li{
+	padding-left: 10px;
+	padding-right: 10px;;
+}
+/* add To chart button */
+.addToChartBtn {
+	background-color: gray;
+	text-align: center;
+	color: black;
+	font-size: 18px;
+	width: 100%;
+	border: none;
+	padding: 7px;
+}
+
+.addToChartBtn:hover {
+	color: #0056b3;
+	text-decoration: none !important;
+}
+
+.bt{
+	border: none;
+	padding: 0px;
+	cursor: pointer;
+	outline:none;
+}
+button.bt:focus {
+	outline:none;
+	
+}
+.priceShow{
+	width: 100%;
+	background-color: red;
+	padding: 20px 0px;
+}
+.checked {
+	color: orange;
+  }
+
+  #orderListPart {
+	margin-top: 108px;
+	padding-top: 40px;
+}
+.sideTitle{
+	width: 100%;
+	background-color: red;
+	padding: 5px;
+}
+.sideMenu{
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 0px 10px 20px gray;
+}
+.sideMenu .dropdown-menu {
+	position: relative;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 10rem;
+	padding:0px;
+	margin: .125rem 0 0;
+	font-size: 1rem;
+	color: #212529;
+	text-align: left;
+	list-style: none;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: .25rem;
+	width: 100%;
+	display: block;
+}
+.sideMenu .dropdown-menu .dropdown-item {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 1.5rem;
+	clear: both;
+	font-weight: 400;
+	color: #212529;
+	text-align: inherit;
+	white-space: nowrap;
+	background-color: transparent;
+	border: 0;
+	font-size: 20px;
+}
+.sideMenu .dropdown-menu .dropdown-item:hover{
+	background-color: rgb(172, 168, 168);
+	color: rgb(0, 0, 0);
+}
+.orderDetailsList{
+	background-color: rgb(233, 233, 233);
+	box-shadow: 0px 5px 20px gray;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.profileSpan{
+	font-size: 14px;
+	padding-left: 20px;
+}
+.profileDetails .form-check {
+	position: relative;
+	display: inline-block;
+	padding-left: 1.25rem;
+}
+.rounded {
+	border-radius: 50% !important;
+}
+#passwordEditPart{
+	padding-bottom: 20px;
+}
+.backShado {
+	background-color: rgb(233, 233, 233);
+	box-shadow: 0px 5px 20px gray;
+	
+	margin-bottom: 40px;
+}
+.shado{
+	box-shadow: 0px 5px 20px gray;
+}
+#checkoutPart{
+	margin-top: 200px;
+}
+.nav-link i{
+	font-size: 28px;
+	font-weight: bold;
+}

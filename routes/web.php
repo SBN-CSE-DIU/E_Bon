@@ -12,5 +12,6 @@ Route::group(['prefix'=>'/admin'], function() {
     Route::resource('order_status', 'ProductController');
 });
 
+
 Route::get('/', ['as'=>'home', 'uses'=>'HomeController@index']);
 Route::get('/home', ['as'=>'home', 'uses'=>'HomeController@index']);
