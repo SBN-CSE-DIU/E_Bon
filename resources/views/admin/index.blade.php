@@ -1,11 +1,6 @@
 @extends('admin/include/layout')
 @section('content')
 
-
-
-
-   
-
         <!-- Begin Page Content -->
         <div class="container-fluid">
 

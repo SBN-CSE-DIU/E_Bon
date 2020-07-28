@@ -21,54 +21,38 @@
                    <div class="cart">
                       <div class="col-md-12  mx-auto">
                          <div class="cardItemWrap">
+                             {!! Form::open(['action'=>'ProductController@store', 'method'=>'POST', 'enctype'=>'multipart/form-data']) !!}
+
                             <div class="cart-item">
                                 <div class="row">
                                    <div class="col-md-7 center-item">
                                       <img src="images/product-1.png" alt="">
                                       <h5>iPhone 11 128GB Black</h5>
+                                       <input type="hidden" name="" value="">
                                    </div>
-              
+
                                    <div class="col-md-5 center-item">
                                       <div class="input-group number-spinner">
-                                         <button onclick="handleProductChange('phone',false)" class="btn btn-default"><i class="fa fa-minus" aria-hidden="true"></i>
-                                         </i></button>
-                                         <input id="phone-count" type="text" class="form-control text-center" value="1">
-                                         <button onclick="handleProductChange('phone',true)" class="btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i>
-                                         </i></button>
+                                         <button onclick="handleProductChange('phone',false)" class="btn btn-default">
+                                             <i class="fa fa-minus" aria-hidden="true"></i>
+                                         </button>
+                                         <input id="phone-count" name="" type="text" class="form-control text-center" value="1">
+                                         <button onclick="handleProductChange('phone',true)" class="btn btn-default">
+                                             <i class="fa fa-plus" aria-hidden="true"></i>
+                                         </button>
                                       </div>
                                       <h5>$ <span id="phone-total">1250</span> </h5>
                                       <img src="images/remove.png" alt="" class="remove-item">
                                    </div>
                                 </div>
-                             </div>
-              
-                             <div class="cart-item">
-                                <div class="row">
-                                   <div class="col-md-7 center-item mx-auto">
-                                      <img src="images/product-2.png" alt="">
-                                      <h5>iPhone 11 Silicone Case - Black</h5>
-                                   </div>
-                                   <div class="col-md-5 center-item">
-                                      <div class="input-group number-spinner">
-                                         <button onclick="handleProductChange('case',false)" class="btn btn-default"><i
-                                               class="fas fa-minus"></i></button>
-                                         <input id="case-count" type="text" class="form-control text-center" value="1">
-                                         <button onclick="handleProductChange('case',true)" class="btn btn-default"><i
-                                               class="fas fa-plus"></i></button>
-              
-                                      </div>
-                                      <h5>$<span id="case-total">125</span></h5>
-                                      <img src="images/remove.png" alt="" class="remove-item">
-                                   </div>
-                                </div>
-                             </div>
-              
-                             
+                            </div>
+
+
                          </div>
                       </div>
                    </div>
                 </div>
-             </section>  
+            </section>
         </div>
 
         <div class="col-md-4">
@@ -76,8 +60,10 @@
                 <h4>SubTotal: <span class="float-right">120Tk</span></h4>
                 <h4>Tax:<span class="float-right">120Tk</span></h4>
                 <h4>Total: <span class="float-right">120Tk</span></h4>
-                <div class="buttonDiv"><button type="button" class="btn btn-primary mt-3 ">Confirm</button></div>
+                <div class="buttonDiv"><button type="submit" class="btn btn-primary mt-3 ">Confirm</button></div>
             </div>
+        </div>
+        {!! Form::close() !!}
     </div>
 </div>
 <script>
@@ -116,7 +102,7 @@
        document.getElementById('tax').innerText=tax;
        const grandTotal=totalAmount+tax;
        document.getElementById('grandTotal').innerText=grandTotal;
-       
+
     }
 
     function inputValue(product) {
