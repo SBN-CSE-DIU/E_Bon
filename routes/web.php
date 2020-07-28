@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 
+use App\Product;
+
+
+
 Auth::routes();
 
 Route::group(['prefix'=>'/admin'], function() {
@@ -15,3 +19,13 @@ Route::group(['prefix'=>'/admin'], function() {
 
 Route::get('/', ['as'=>'home', 'uses'=>'HomeController@index']);
 Route::get('/home', ['as'=>'home', 'uses'=>'HomeController@index']);
+
+Route::get('/name',function(){
+    return view('admin/product/create');
+})->name('name');
+
+Route::get('/pro',function(){
+    $rows = Product::all();
+return view('admin/product/index', compact(['rows']));
+})->name('pro');
+
