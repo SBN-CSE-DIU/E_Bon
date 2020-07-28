@@ -1,4 +1,4 @@
-@extends('admin.layout.layout')
+@extends('admin/include/layout')
 @section('content')
 <div class="col-lg-9 col-md-10 mx-auto">
     <h2>Insert Product</h2>
