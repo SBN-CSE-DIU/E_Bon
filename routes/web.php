@@ -29,5 +29,3 @@ Route::get('/pro',function(){
 return view('admin/product/index', compact(['rows']));
 })->name('pro');
 
-
-
