@@ -22,14 +22,15 @@ class OrderController extends Controller
     {
 //        //validation Order
 //        $this->validate($request, [
-//            'name'=>'required'
+//            'order'=>'required'
 //        ]);
 
-        //create status
+        //create order
         $order = new Order();
-        $order->order_no = "";
-        $order->user_id = $request->input('name');
-        if($status->save())
+        $order->order_no = "200829";
+        $order->user_id = Auth::user()->id;
+        $order->total_price = $request->input('name');
+        if($order->save())
             return redirect()->back()->with('success', 'Order Status Created Successfully');
         else
             return redirect()->back()->with('error', 'Oops!... Order Status Can not Created. Please try again.');

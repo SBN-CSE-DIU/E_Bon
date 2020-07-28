@@ -21,8 +21,8 @@ class CreateProductsTable extends Migration
             $table->string('color')->nullable();
             $table->string('age')->nullable();
             $table->mediumText('image')->nullable();
-            $table->boolean('isdeleted')->nullable();
             $table->text('description')->nullable();
+            $table->boolean('isdeleted')->nullable();
             $table->timestamps();
         });
     }
