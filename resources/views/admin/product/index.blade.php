@@ -1,4 +1,4 @@
-@extends('admin/layout/layout')
+@extends('admin/include/layout')
 @section('content')
 <div class="col-md-10 ">
     <br>
@@ -28,14 +28,14 @@
                 <a class="btn btn-warning" href="">Edit</a>
                 <a class="btn btn-danger" href="">Delete</a>
 
-{{--                {!! Form::open(['action'=>['ProductController@destroy', $row->id], 'method'=>'DELETE']) !!}--}}
-{{--                    <button class="btn btn-danger">Delete</button>--}}
-{{--                {!! Form::close() !!}--}}
+              {{--{!! Form::open(['action'=>['ProductController@destroy', $row->id], 'method'=>'DELETE']) !!}--}}
+              {{--<button class="btn btn-danger">Delete</button>--}}
+              {{--{!! Form::close() !!}--}}
 
             </td>
         </tr>
       @endforeach
   </tbody>
 </table>
-</div>
+
 @endsection
